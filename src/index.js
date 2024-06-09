@@ -9,7 +9,7 @@ const RevealPlantUML = {
 
     ready: function () {
         const config = Reveal.getConfig().plantuml || {};
-        const server = config.serverPath || '//www.plantuml.com/plantuml/svg/';
+        const server = config.serverPath || 'https://www.plantuml.com/plantuml/svg/';
 
         document.querySelectorAll('.reveal pre code.plantuml').forEach(function (block) {
             const img = document.createElement("img");
